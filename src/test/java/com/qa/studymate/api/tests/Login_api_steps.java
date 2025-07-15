@@ -7,7 +7,6 @@ import io.cucumber.java.en.*;
 import io.restassured.RestAssured;
 import org.junit.Assert;
 import utils.ConfigReader;
-
 import java.util.HashMap;
 import java.util.Map;
 
