@@ -8,5 +8,4 @@ public class ApiBase {
     protected static RequestSpecification request;
     protected static Response response;
 
-
 }
