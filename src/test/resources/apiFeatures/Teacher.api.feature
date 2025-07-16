@@ -1,6 +1,7 @@
-@regression
+
 Feature: Teacher API Test
 
+  @regression
   Scenario: Successfully add a new instructor
     Given the base url is "https://backend.studymate.us"
     And the endpoint path is "/api/instructors"
@@ -17,6 +18,7 @@ Feature: Teacher API Test
     And verify status code is 200
     Then verify response body contains key "message" and value "New student successfully saved"
 
+  @regression
   Scenario: Successfully retrieve all teachers
     Given the base url is "https://backend.studymate.us"
     And the endpoint path is "/api/instructors"
