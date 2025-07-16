@@ -1,5 +1,4 @@
 package com.qa.studymate.api.pojo;
-
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;

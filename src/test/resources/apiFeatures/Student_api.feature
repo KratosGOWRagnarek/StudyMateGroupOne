@@ -1,4 +1,5 @@
 Feature: Test student functionality
+
   @regression
   Scenario: Successfully add a new student
     Given the base url is "https://backend.studymate.us"
@@ -17,6 +18,7 @@ Feature: Test student functionality
     Then verify status code is 200
     And verify response body contains key "message" and value "New student successfully saved"
 
+  @regression
   Scenario: Successfully retrieve all students
     Given the base url is "https://backend.studymate.us"
     And the endpoint path is "/api/students"
