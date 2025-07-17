@@ -1,4 +1,3 @@
-
 Feature: Teacher API Test
 
   @regression
@@ -8,15 +7,19 @@ Feature: Teacher API Test
     And the origin header is set to "https://codewise.studymate.us"
     And the valid token is provided
     And then request content type is "application/json"
-    And the request body contains following fields
-      | name           | Kelly              |
-      | lastName       | Star               |
-      | phone          | +1 122 233 3356    |
-      | email          | kelly123@gmail.com |
+    And the request body contains fields
+      | name           | Taylor             |
+      | lastName       | Sw                 |
+      | phoneNumber    | 1233553356         |
+      | email          | benabena@gmail.com |
       | specialization | Java               |
+      | courses        | 0                  |
+
+
+
     When I send a POST request
     And verify status code is 200
-    Then verify response body contains key "message" and value "New student successfully saved"
+    Then verify response body contains key "message" and value "Instructor successfully saved"
 
   @regression
   Scenario: Successfully retrieve all teachers
